@@ -1,3 +1,4 @@
+#!/usr/bin/node
 // Check the number of arguments passed
 const numArgs = process.argv.length - 2; // Subtract 2 to exclude 'node' and script filename
 
