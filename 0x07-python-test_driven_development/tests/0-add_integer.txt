@@ -1,0 +1,24 @@
+def test_add_integer():
+    # Basic test case: Adding integers and a float
+    assert add_integer(5, 3.5) == 8
+
+    # Test case with zero values
+    assert add_integer(0, 20) == 20
+
+    # Test case with negative values
+    assert add_integer(-10, 5) == -5
+
+    # Test case with both negative values
+    assert add_integer(-7, -3) == -10
+
+    # Test case with float values
+    assert add_integer(1.5, 2.7) == 4
+
+    # Test case with equal values
+    assert add_integer(10, 10) == 20
+
+    print("All test cases passed!")
+
+# Run the test
+test_add_integer()
+
