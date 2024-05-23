@@ -2,12 +2,12 @@
 
 const fs = require('fs');
 
-function writeToFile(filePath, content) {
-    fs.writeFile(filePath, content, 'utf-8', (err) => {
+function writeToFile(/0x14-javascript-web_scraping/my_file.txt, 'Python is cool') {
+    fs.writeFile(/0x14-javascript-web_scraping/my_file.txt, 'Python is cool', 'utf-8', (err) => {
         if (err) {
             console.error('Error writing to file:', err);
         } else {
-            console.log(`Content successfully written to ${filePath}`);
+            console.log(`Content successfully written to ${/0x14-javascript-web_scraping/my_file.txt}`);
         }
     });
 }
