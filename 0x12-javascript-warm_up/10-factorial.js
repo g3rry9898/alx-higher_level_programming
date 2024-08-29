@@ -1,18 +1,15 @@
 #!/usr/bin/node
 
 function factorial(n) {
-    if (n === 0 || n === 1) {
+    if (isNaN(n) || n === 0) {
         return 1;
+    } else if (n < 0) {
+        return -1; // Factorial of negative numbers is not defined
     } else {
         return n * factorial(n - 1);
     }
 }
 
-const input = parseInt(process.argv[2], 10);
-
-if (!isNaN(input)) {
-    console.log(`Factorial of ${input} is ${factorial(input)}`);
-} else {
-    console.log("Invalid input. Please provide a valid integer.");
-}
+const arg = parseInt(process.argv[2], 10);
+console.log(factorial(arg));
 
